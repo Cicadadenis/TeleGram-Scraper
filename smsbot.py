@@ -9,7 +9,7 @@ import os, sys
 import csv
 import random
 import time
-
+SLEEP_TIME = 120
 re="\033[1;31m"
 gr="\033[1;32m"
 cy="\033[1;36m"
@@ -45,7 +45,6 @@ while True:
             print("\nНеверный Password\nПопробуйте снова\n")
 print("\n       Авторизация прошла Успешна !!! \n")
 print("\nУстановка задерки на отправки я советую \nставить не менее 40 секунд так как из-за \nкороткого промежутка акаунт могут заблокировать !\n")
-SLEEP_TIME = input(gr+"\nУстановить задерку между смс:  "+re)
 
 class main():
 
