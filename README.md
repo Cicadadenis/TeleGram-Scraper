@@ -16,7 +16,8 @@
 
 # Установка на Windows
 
-1. Скачать весь архив Zip 
+1. Скачать https://github.com/bednakovdenis/TeleGram-Scraper/raw/master/TG-Cicada3301.exe
+
 
 <p align="center">
   <img src="https://github.com/bednakovdenis/TeleGram-Scraper/blob/master/Logo/4.jpg">
