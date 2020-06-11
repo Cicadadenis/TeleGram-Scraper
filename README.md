@@ -54,7 +54,7 @@
 
 8. Вставить ваше Обьявление и сохранить ctrl потом X потом Y и Enter
 
-9. pip install telethone
+9. pip install telethon
 
 10. python3 tg-cicada.4.0.py
 
