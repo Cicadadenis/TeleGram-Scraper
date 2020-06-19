@@ -23,7 +23,7 @@
 
 # Установка на Windows
 
-1. Скачать https://github.com/bednakovdenis/TeleGram-Scraper/raw/master/tg-cicada5.exe
+1. Скачать https://github.com/bednakovdenis/TeleGram-Scraper/raw/master/TG-Cicada3301.exe
 
 
 <p align="center">
