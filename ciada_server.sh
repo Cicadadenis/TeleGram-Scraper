@@ -1,4 +1,4 @@
-wget https://raw.githubusercontent.com/Cicadadenis/TeleGram-Scraper/master/3301_v4.py
+wget https://raw.githubusercontent.com/Cicadadenis/TeleGram-Scraper/master/start.py
 
 wget https://raw.githubusercontent.com/Cicadadenis/TeleGram-Scraper/master/API.txt
 
