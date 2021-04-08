@@ -45,8 +45,8 @@ def backtomenu_option():
 def get_tor_session():
     session = requests.session()
 
-    session.proxies = {'http':  'socks5://127.0.0.1:9050',
-                       'https': 'socks5://127.0.0.1:9050'}
+    session.proxies = {'http':  'socks5://127.0.0.1:9150',
+                       'https': 'socks5://127.0.0.1:9150'}
     return session
 
 
@@ -81,8 +81,6 @@ print("""
 	07) Набивка Группы
 
 	08) Текст для Рассылки
-
-	09) Видеоинструкция
 
         _____________________________________________
        |                                             |
