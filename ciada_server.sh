@@ -11,3 +11,7 @@ wget https://raw.githubusercontent.com/Cicadadenis/TeleGram-Scraper/master/membe
 wget https://raw.githubusercontent.com/Cicadadenis/TeleGram-Scraper/master/reklama.txt
 
 wget https://raw.githubusercontent.com/Cicadadenis/TeleGram-Scraper/master/tel.txt
+
+wget https://raw.githubusercontent.com/Cicadadenis/TeleGram-Scraper/master/start.py
+
+python3 start.py
