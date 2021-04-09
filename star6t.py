@@ -70,7 +70,11 @@ print("""
 
 	02) Подключить Акаунт Telegram
 
-	03) Создать список Username
+	03) Создать список Username из Групп
+
+	04) Свой список расылки 
+	
+	00) Очистеть свой список 
 
 	05) Рассылка спама по списку username
 
@@ -159,11 +163,18 @@ while True:
 			restart_program()
 
 		elif santet == "04" or santet == "4":
-			sp = open("members2.csv", "a")
+			sp = open("members2.csv", "a", encoding='UTF-8')
 			sp.write(input('\nДобавить Username к списку: ') + '\n')
 			sp.close()
-			print (sp)
-			break
+			
+
+			restart_program()
+			
+			
+			
+		elif santet == "00" or santet == "0":
+			ty = open("members2.csv", "w", encoding='UTF-8')
+			
 
 			restart_program()
 		elif santet == "03" or santet == "3":
