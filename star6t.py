@@ -286,7 +286,7 @@ while True:
 							name= (first_name + ' ' + last_name).strip()
                                                         
 							print('['+str(i)+']'+' - '+ username.title)
-                                                        i+=1
+                                                        
                                                         writer.writerow([username,user.id,user.access_hash,name,target_group.title, target_group.id])
                                                         
 					print('[+] Участники успешно сохранены.')
