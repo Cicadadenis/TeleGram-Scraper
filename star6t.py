@@ -159,14 +159,22 @@ while True:
 			wer = open("reklama.txt", "w")
 			wer.write(input("\nВведите СМС Для рассылки \nТекст смс будет сохранет до следущей перезаписи его: "))
 			wer.close()
-
+                
 			restart_program()
 
 		elif santet == "04" or santet == "4":
 			sp = open("members2.csv", "a", encoding='UTF-8')
 			sp.write(input('\nДобавить Username к списку: ') + '\n')
 			sp.close()
-			
+			input_file = "members2.csv"
+                        users = []
+                        with open(input_file, encoding='UTF-8') as f:
+                            rows = csv.reader(f,delimiter=",",lineterminator="\n")
+                            next(rows, None)
+                            for row in rows:
+                                 user = {}
+                                 users.append(user)
+                                 Print ("user")
 
 			restart_program()
 			
