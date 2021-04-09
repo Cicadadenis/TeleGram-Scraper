@@ -58,7 +58,7 @@ addd = requests.get("http://httpbin.org/ip").text
 
 
 print("\n       Подключение через Тор , Ваш IP Адрес ", addd)
-time.sleep(4)
+time.sleep(2)
 
 
 print("""
@@ -72,15 +72,15 @@ print("""
 
 	03) Создать список Username
 
-	04) Рассылка спама по списку username
+	05) Рассылка спама по списку username
 
-	05) Рассылка спама по Своему списку Username
+	06) Рассылка спама по Своему списку Username
 
-	06) Рассылка по id группы или username
+	07) Рассылка по id группы или username
 
-	07) Набивка Группы
+	08) Набивка Группы
 
-	08) Текст для Рассылки
+	09) Текст для Рассылки
 
         _____________________________________________
        |                                             |
@@ -150,7 +150,7 @@ while True:
 
 			restart_program()
 
-		elif santet == "08" or santet == "8":
+		elif santet == "09" or santet == "9":
 
 			wer = open("reklama.txt", "w")
 			wer.write(input("\nВведите СМС Для рассылки \nТекст смс будет сохранет до следущей перезаписи его: "))
@@ -158,17 +158,28 @@ while True:
 
 			restart_program()
 
-		elif santet == "09" or santet == "9":
-			from telethon.sync import TelegramClient
-			from telethon.tl.functions.messages import GetDialogsRequest
-			from telethon.tl.types import InputPeerEmpty
-			import os, sys
-			import configparser
-			import csv
-			import time
-
-			webbrowser.open("https://www.youtube.com/watch?v=Tbo-kV33lxo", new=2)
-
+		elif santet == "04" or santet == "4":
+            def function (args) : 
+                while True:
+                    try:
+                        sat = input("Ваш Выбор > ")
+                        if sat == "01" or sat == "1":
+                            from telethon.sync import TelegramClient
+                            from telethon.tl.functions.messages import GetDialogsRequest
+                            from telethon.tl.types import InputPeerEmpty
+                            import os, sys
+                            import configparser
+                            import csv
+                            import time 
+                            sp = open("members2.csv", "a")
+                            sp.write(input('\nДобавить Username к списку: ') + '\n')
+                            
+                            sp.close()
+                            print (sp)
+                            break 
+                            
+                        
+                        
 			restart_program()
 		elif santet == "03" or santet == "3":
 					#!/usr/dev/python3
@@ -278,7 +289,7 @@ while True:
 							writer.writerow([username,user.id,user.access_hash,name,target_group.title, target_group.id])
 					print('[+] Участники успешно сохранены.')
 					restart_program()
-
+        
 		elif santet == "05" or santet == "5":
 			#!/usr/dev/python3
 			#Bednakov-Xack-Live
@@ -291,9 +302,9 @@ while True:
 			import csv
 			import random
 			import time
-			print("\nВставте имена Username каждое с новой строчки")
-			time.sleep(4)
-			webbrowser.open("members2.csv", new=2)
+			my_list = []
+            
+            
 
 
 			print("\nУстанавливать смс задерку между отправкой смс \n")
@@ -388,7 +399,7 @@ while True:
 			main.send_sms()
 
 			restart_program()
-		elif santet == "04" or santet == "4":
+		elif santet == "06" or santet == "6":
 			#!/usr/dev/python3
 			#Bednakov-Xack-Live
 			#2020/01/05
@@ -491,7 +502,7 @@ while True:
 			main.send_sms()
 
 			restart_program()
-		elif santet == "06" or santet == "6":
+		elif santet == "07" or santet == "7":
 			import time
 			api = open("API.txt","r")
 			api_id = api.read()
@@ -578,7 +589,7 @@ while True:
 
 
 
-		elif santet == "07" or santet == "7":
+		elif santet == "08" or santet == "8":
 
 			from telethon.sync import TelegramClient
 			from telethon.tl.functions.messages import GetDialogsRequest
