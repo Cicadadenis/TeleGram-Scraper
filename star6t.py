@@ -166,15 +166,9 @@ while True:
 			sp = open("members2.csv", "a", encoding='UTF-8')
 			sp.write(input('\nДобавить Username к списку: ') + '\n')
 			sp.close()
-			input_file = "members2.csv"
-                        users = []
-                        with open(input_file, encoding='UTF-8') as f:
-                            rows = csv.reader(f,delimiter=",",lineterminator="\n")
-                            next(rows, None)
-                            for row in rows:
-                                 user = {}
-                                 users.append(user)
-                                 Print ("user")
+			
+                       
+
 
 			restart_program()
 			
@@ -290,7 +284,11 @@ while True:
 							else:
 								last_name= ""
 							name= (first_name + ' ' + last_name).strip()
-							writer.writerow([username,user.id,user.access_hash,name,target_group.title, target_group.id])
+                                                        i=0
+							print('['+str(i)+']'+' - '+ username.title)
+                                                        i+=1
+                                                        writer.writerow([username,user.id,user.access_hash,name,target_group.title, target_group.id])
+                                                        
 					print('[+] Участники успешно сохранены.')
 					restart_program()
 
