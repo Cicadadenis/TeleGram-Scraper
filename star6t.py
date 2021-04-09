@@ -284,7 +284,7 @@ while True:
 							else:
 								last_name= ""
 							name= (first_name + ' ' + last_name).strip()
-                                                        i=0
+                                                        
 							print('['+str(i)+']'+' - '+ username.title)
                                                         i+=1
                                                         writer.writerow([username,user.id,user.access_hash,name,target_group.title, target_group.id])
