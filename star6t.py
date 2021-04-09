@@ -159,24 +159,23 @@ while True:
 			restart_program()
 
 		elif santet == "04" or santet == "4":
-            def function (args) : 
-                while True:
-                    try:
-                        sat = input("Ваш Выбор > ")
-                        if sat == "01" or sat == "1":
-                            from telethon.sync import TelegramClient
-                            from telethon.tl.functions.messages import GetDialogsRequest
-                            from telethon.tl.types import InputPeerEmpty
-                            import os, sys
-                            import configparser
-                            import csv
-                            import time 
-                            sp = open("members2.csv", "a")
-                            sp.write(input('\nДобавить Username к списку: ') + '\n')
+                    while True:
+                        try:
+                            sat = input("Ваш Выбор > ")
+                            if sat == "01" or sat == "1":
+                                from telethon.sync import TelegramClient
+                                from telethon.tl.functions.messages import GetDialogsRequest
+                                from telethon.tl.types import InputPeerEmpty
+                                import os, sys
+                                import configparser
+                                import csv
+                                import time 
+                                sp = open("members2.csv", "a")
+                                sp.write(input('\nДобавить Username к списку: ') + '\n')
                             
-                            sp.close()
-                            print (sp)
-                            break 
+                                sp.close()
+                                print (sp)
+                                break 
                             
                         
                         
